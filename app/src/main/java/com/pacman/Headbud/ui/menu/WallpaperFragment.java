@@ -29,21 +29,10 @@ public class WallpaperFragment extends Fragment {
     private ArrayList<image> image = new ArrayList<>();
     private static final int NUM_COLUMNS = 2;
     public static int theme = -1;
-    Button d;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.activity_wallpaper, container, false);
-        d = root.findViewById(R.id.def);
-        d.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                theme = -1;
-                Toast.makeText(getContext(), "Default Wallpaper Set", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent( getContext(), HomeActivity.class);
-                startActivity(i);
-            }
-        });
         getImages(root);
         return root;
     }

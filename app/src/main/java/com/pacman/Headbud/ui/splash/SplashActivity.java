@@ -7,8 +7,6 @@ import android.os.Handler;
 import android.util.Pair;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,7 +18,6 @@ import com.pacman.Headbud.ui.login.LoginActivity;
 public class SplashActivity extends AppCompatActivity {
     private static int SPLASH_SCREEN = 5000;
 
-    Animation top, bottom;
     ImageView image;
     TextView t;
 
@@ -30,11 +27,9 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_startlogin);
 
-        image = findViewById(R.id.splashlogo);
+        image = findViewById(R.id.logo);
         t = findViewById(R.id.sub);
 
-        image.setAnimation(top);
-        t.setAnimation(bottom);
 
         new Handler().postDelayed(new Runnable() {
             @Override

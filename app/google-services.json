@@ -18,7 +18,7 @@
           "client_id": "1055750495058-373m3r9g1j78tlphvo6rbvjl7sj8e1sm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.pacman.MentAlly",
+            "package_name": "com.pacman.Headbud",
             "certificate_hash": "b6ad935e1329c4baa2b009d2cb78949e60a14866"
           }
         },
@@ -26,7 +26,7 @@
           "client_id": "1055750495058-3agc9qek3attbnbffqb797tl923j17fv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.pacman.MentAlly",
+            "package_name": "com.pacman.Headbud",
             "certificate_hash": "211a888e37fa0d7619e1c9b4a53610f77bb90807"
           }
         },
@@ -34,7 +34,7 @@
           "client_id": "1055750495058-olom5nvlt9qem7mrrn49ti0c0ncu0a3b.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.pacman.MentAlly",
+            "package_name": "com.pacman.Headbud",
             "certificate_hash": "acd4ccef98f2a118e123a66229acefbfeb2b8b17"
           }
         },
@@ -42,7 +42,7 @@
           "client_id": "1055750495058-ic198ilh445viotk3ct31hn0as6rcfb6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.pacman.MentAlly",
+            "package_name": "com.pacman.Headbud",
             "certificate_hash": "378156bc176cb0a1e85f9d3b58908c617843ae30"
           }
         },
