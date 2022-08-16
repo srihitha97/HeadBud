@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pacman.Headbud">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main Splash Page -->
+        <activity android:name="com.pacman.Headbud.ui.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Page -->
+        <activity android:name="com.pacman.Headbud.ui.login.LoginActivity" />
+
+        <!-- Registration Page -->
+        <activity
+            android:name="com.pacman.Headbud.ui.register.RegisterActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <!-- Main Page -->
+        <activity android:name="com.pacman.Headbud.ui.home.MainActivity" />
+
+        <!-- Profile Page -->
+        <activity android:name="com.pacman.Headbud.ui.profile.ProfileActivity" />
+      
+
+        <activity android:name="com.pacman.Headbud.ui.home.HomeActivity">
+        </activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+</manifest>

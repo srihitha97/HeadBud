@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/user"
+            android:title="Home"/>
+
+        <item android:id="@+id/nav_todo"
+            android:icon="@drawable/user"
+            android:title="ToDo"/>
+
+        <item android:id="@+id/nav_habit"
+            android:icon="@drawable/user"
+            android:title="Habit Tracker"/>
+
+        <item android:id="@+id/nav_mood"
+            android:icon="@drawable/user"
+            android:title="Mood Tracker"/>
+
+        <item android:id="@+id/nav_breathe"
+            android:icon="@drawable/user"
+            android:title="Breathe"/>
+
+        <item android:id="@+id/nav_quiz"
+            android:icon="@drawable/user"
+            android:title="Self-Assess"/>
+
+        <item android:id="@+id/nav_ambient"
+            android:icon="@drawable/user"
+            android:title="Ambient"/>
+
+        <item android:id="@+id/nav_wallpaper"
+            android:icon="@drawable/user"
+            android:title="Change Wallpaper"/>
+
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:title="Profile"/>
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/user"
+            android:title="Emergency Contacts" />
+
+        <item
+            android:id="@+id/nav_helpline"
+            android:icon="@drawable/user"
+            android:title="Helpline" />
+
+        <item
+            android:id="@+id/nav_emergency"
+            android:icon="@drawable/user"
+            android:title="Emergency" />
+
+    </group>
+
+</menu>
