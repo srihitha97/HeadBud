@@ -30,6 +30,8 @@
         <activity android:name="com.pacman.Headbud.ui.profile.ProfileActivity" />
         <activity android:name="com.pacman.Headbud.ui.Mood.MoodActivity" />
         <activity android:name="com.pacman.Headbud.ui.Mood.AddMoodActivity" />
+        <activity android:name="com.pacman.Headbud.ui.breathing.BreathingActivity" />
+        <activity android:name="com.pacman.Headbud.ui.breathing.BreathingExerciseActivity" />
         <activity android:name="com.pacman.Headbud.ui.home.HomeActivity"/>
         <activity android:name="com.pacman.Headbud.ui.steps.StepCounter">
         </activity>

@@ -27,6 +27,7 @@ import androidx.fragment.app.DialogFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.pacman.Headbud.R;
 import com.pacman.Headbud.ui.Mood.MoodActivity;
+import com.pacman.Headbud.ui.breathing.BreathingActivity;
 import com.pacman.Headbud.ui.profile.ProfileActivity;
 import com.pacman.Headbud.ui.menu.WallpaperFragment;
 import com.pacman.Headbud.ui.steps.StepCounter;
@@ -81,6 +82,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_mood:
                 Intent i_mood = new Intent(this, MoodActivity.class);
                 startActivity(i_mood);
+                draw.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.nav_breathe:
+                Intent i_breathe = new Intent(this, BreathingActivity.class);
+                startActivity(i_breathe);
                 draw.closeDrawer(GravityCompat.START);
                 break;
 
