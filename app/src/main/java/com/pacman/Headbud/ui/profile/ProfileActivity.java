@@ -141,7 +141,6 @@ public class ProfileActivity extends MainActivity {
                 final EditText name = editProfileDialogView.findViewById(R.id.name);
                 final EditText dob = editProfileDialogView.findViewById(R.id.dob);
                 final EditText country = editProfileDialogView.findViewById(R.id.country);
-               // final EditText gender = editProfileDialogView.findViewById(R.id.genderlabel);
                 final String uid = user.getUid();
 
                 dob.setOnClickListener(new View.OnClickListener() {

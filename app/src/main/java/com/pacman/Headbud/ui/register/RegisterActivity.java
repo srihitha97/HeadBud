@@ -54,17 +54,14 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
         registerViewModel = new ViewModelProvider(this, new RegisterViewModelFactory()).get(RegisterViewModel.class);
 
-        //initialize cloud firestore database and authentication
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
 
-        // Setup dropdown list for gender
         gender = findViewById(R.id.gender);
         String[] genderList = new String[]{"Male", "Female", "Other", "Prefer not to specify"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, genderList);
         gender.setAdapter(adapter);
 
-        // Get access to all user input components on UI
         nameEditText = findViewById(R.id.name);
         usernameEditText = findViewById(R.id.username);
         passwordEditText = findViewById(R.id.password);
@@ -101,12 +98,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         TextWatcher afterTextChangedListener = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // ignore
+
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // ignore
+
             }
 
             @Override
@@ -118,7 +115,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             }
         };
 
-        // Setup listeners for input field changes
         usernameEditText.addTextChangedListener(afterTextChangedListener);
         passwordEditText.addTextChangedListener(afterTextChangedListener);
         DOBEditText.addTextChangedListener(afterTextChangedListener);
@@ -173,7 +169,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     }
 
     public void createAccount(String email, String password) {
-        // START create_user_with_email
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -187,7 +182,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 }
             }
         });
-        // END create_user_with_email
     }
 
     private void updateUIWithUser(FirebaseUser user) {
