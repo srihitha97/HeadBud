@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- Main Splash Page -->
         <activity android:name="com.pacman.Headbud.ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,25 +19,19 @@
             </intent-filter>
         </activity>
 
-        <!-- Login Page -->
         <activity android:name="com.pacman.Headbud.ui.login.LoginActivity" />
 
-        <!-- Registration Page -->
         <activity
             android:name="com.pacman.Headbud.ui.register.RegisterActivity"
             android:label="@string/app_name">
         </activity>
 
-        <!-- Main Page -->
         <activity android:name="com.pacman.Headbud.ui.home.MainActivity" />
-
-        <!-- Profile Page -->
         <activity android:name="com.pacman.Headbud.ui.profile.ProfileActivity" />
-      
-
+        <activity android:name="com.pacman.Headbud.ui.Mood.MoodActivity" />
+        <activity android:name="com.pacman.Headbud.ui.Mood.AddMoodActivity" />
         <activity android:name="com.pacman.Headbud.ui.home.HomeActivity">
         </activity>
-
 
         <meta-data
             android:name="preloaded_fonts"
