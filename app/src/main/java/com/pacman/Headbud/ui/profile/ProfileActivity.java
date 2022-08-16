@@ -185,9 +185,6 @@ public class ProfileActivity extends MainActivity {
                                 if (!country.getText().toString().isEmpty()) {
                                     myDatabase.collection("users").document(uid).update("Country", country.getText().toString());
                                 }
-                    //            if (!gender.getText().toString().isEmpty()) {
-                     //               myDatabase.collection("users").document(uid).update("Gender", gender.getText().toString());
-                       //         }
 
                                 updateLabels();
                             }
