@@ -42,6 +42,10 @@
             android:icon="@drawable/user"
             android:title="Profile"/>
 
+        <item android:id="@+id/nav_steps"
+            android:icon="@drawable/user"
+            android:title="Step Counter"/>
+
         <item
             android:id="@+id/nav_contacts"
             android:icon="@drawable/user"
