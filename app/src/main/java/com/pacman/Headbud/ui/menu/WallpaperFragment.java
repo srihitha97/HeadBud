@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -39,7 +38,13 @@ public class WallpaperFragment extends Fragment {
 
     private void getImages(View root){
         Log.d("tag", "initImageBitmaps: preparing bitmaps.");
+        image.add(new image(R.drawable.def));
         image.add(new image(R.drawable.w1));
+        image.add(new image(R.drawable.w2));
+        image.add(new image(R.drawable.w3));
+        image.add(new image(R.drawable.w4));
+        image.add(new image(R.drawable.w5));
+        image.add(new image(R.drawable.w6));
         System.out.println(image);
         initRecyclerView(root);
     }

@@ -13,7 +13,7 @@
         android:id="@+id/gif"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/w1"
+        android:src="@drawable/def"
         android:background="@color/black"/>
 
     <TextView
