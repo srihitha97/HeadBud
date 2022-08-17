@@ -2,7 +2,6 @@
 
     <string name="app_name">HeadBud</string>
 
-    <!-- Login Strings -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>

@@ -33,6 +33,7 @@
         <activity android:name="com.pacman.Headbud.ui.breathing.BreathingActivity" />
         <activity android:name="com.pacman.Headbud.ui.breathing.BreathingExerciseActivity" />
         <activity android:name="com.pacman.Headbud.ui.home.HomeActivity"/>
+        <activity android:name="com.pacman.Headbud.ui.helpline.helplineActivity"/>
         <activity android:name="com.pacman.Headbud.ui.steps.StepCounter">
         </activity>
 

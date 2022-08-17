@@ -45,6 +45,7 @@ public class WallpaperFragment extends Fragment {
         image.add(new image(R.drawable.w4));
         image.add(new image(R.drawable.w5));
         image.add(new image(R.drawable.w6));
+        image.add(new image(R.drawable.w8));
         System.out.println(image);
         initRecyclerView(root);
     }
