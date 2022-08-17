@@ -31,6 +31,7 @@ import com.pacman.Headbud.ui.breathing.BreathingActivity;
 import com.pacman.Headbud.ui.helpline.helplineActivity;
 import com.pacman.Headbud.ui.profile.ProfileActivity;
 import com.pacman.Headbud.ui.menu.WallpaperFragment;
+import com.pacman.Headbud.ui.quiz.QuizActivity;
 import com.pacman.Headbud.ui.steps.StepCounter;
 import com.pacman.Headbud.ui.todo.ToDoListActivity;
 
@@ -96,6 +97,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_todo:
                 Intent i_todo = new Intent(this, ToDoListActivity.class);
                 startActivity(i_todo);
+                draw.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.nav_quiz:
+                Intent i_quiz = new Intent(this, QuizActivity.class);
+                startActivity(i_quiz);
                 draw.closeDrawer(GravityCompat.START);
                 break;
 
