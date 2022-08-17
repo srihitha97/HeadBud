@@ -29,6 +29,7 @@ import com.pacman.Headbud.R;
 import com.pacman.Headbud.ui.Mood.MoodActivity;
 import com.pacman.Headbud.ui.breathing.BreathingActivity;
 import com.pacman.Headbud.ui.helpline.helplineActivity;
+import com.pacman.Headbud.ui.meditation.AmbientActivity;
 import com.pacman.Headbud.ui.profile.ProfileActivity;
 import com.pacman.Headbud.ui.menu.WallpaperFragment;
 import com.pacman.Headbud.ui.quiz.QuizActivity;
@@ -55,7 +56,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navView = findViewById(R.id.nav_view);
         navView.setNavigationItemSelectedListener(this);
 
-        //implement navigation bar icon
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, draw, toolbar, R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close);
         draw.addDrawerListener(toggle);
@@ -91,6 +91,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_helpline:
                 Intent i_help = new Intent(this, helplineActivity.class);
                 startActivity(i_help);
+                draw.closeDrawer(GravityCompat.START);
+                break;
+
+            case R.id.nav_ambient:
+                Intent i_ambient = new Intent(this, AmbientActivity.class);
+                startActivity(i_ambient);
                 draw.closeDrawer(GravityCompat.START);
                 break;
 

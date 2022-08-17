@@ -35,8 +35,6 @@ public class RegisterViewModel extends ViewModel {
             registerFormState.setValue(new RegisterFormState(true));
         }
     }
-
-    // A placeholder username validation check
     private boolean isUserNameValid(String username) {
         if (username == null) {
             return false;
@@ -48,12 +46,10 @@ public class RegisterViewModel extends ViewModel {
         }
     }
 
-    // A placeholder password validation check
     private boolean isPasswordValid(String password) {
         return password != null && password.trim().length() > 5;
     }
 
-    // A placeholder DOB validation check
     private boolean isDOBValid(String DOB) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         dateFormat.setLenient(false);

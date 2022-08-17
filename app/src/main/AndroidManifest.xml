@@ -38,6 +38,10 @@
         <activity android:name="com.pacman.Headbud.ui.depression.depressionActivity" />
         <activity android:name="com.pacman.Headbud.ui.depression.depressionResultActivity" />
         <activity android:name="com.pacman.Headbud.ui.quiz.QuizActivity" />
+        <activity android:name="com.pacman.Headbud.ui.meditation.AmbientActivity"/>
+        <service android:name="com.pacman.Headbud.ui.meditation.MediaPlaybackService">
+            <intent-filter><action android:name="android.media.browse.MediaBrowserService"/></intent-filter>
+        </service>
         <activity android:name="com.pacman.Headbud.ui.steps.StepCounter">
         </activity>
 
